@@ -11,14 +11,14 @@ import { Suspense } from "react";
 /**
  * This is a server component that defines a structure and organization of a page that can be used in different parts of the Hydrogen app
  */
-
-export default function Layout({ children }) {
+export function Layout({ children }) {
   const { pathname } = useUrl();
   const isHome = pathname === "/";
 
   const {
     data: { shop },
   } = useShopQuery({ query: SHOP_QUERY, cache: CacheLong });
+  
 
   return (
     <>

@@ -10,7 +10,7 @@ export default function FeaturedCollections() {
       <h2 className="whitespacr-pre-wrap max-w-prose font-bold text-lead">
         Collections
       </h2>
-      <div className=" grid-flow-row grid gap-2 gap-y-6 md:gap-4 lg:gap-6 grid-cols-1 false sm:gid-cols-3 false false">
+      <div className=" grid-flow-row grid gap-2 gap-y-6 md:gap-4 lg:gap-6 grid-cols-3 false sm:gid-cols-3 false false">
         {collections.nodes.map((collection) => {
           return (
             <Link key={collection.id} to={`/collections/${collection.handle}`}>
